@@ -6,6 +6,6 @@ app.get('/healthcheck',(req,res)=>{
     res.send("connected successfully.")
 })
 
-app.listen(3000,()=>{
-    console.log("server is running on 3000");
+app.listen(3001,()=>{
+    console.log("server is running on 3001");
 })
