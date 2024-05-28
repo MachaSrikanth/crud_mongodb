@@ -7,7 +7,10 @@ pipeline {
     stage("Clone code from GitHub") {
             steps {
                 script {
-                   git branch: 'main', url: 'https://github.com/MachaSrikanth/crud_mongodb.git'                }
+                   git branch: 'main', url: 'https://github.com/MachaSrikanth/crud_mongodb.git' 
+
+                  sh 'npm install'
+                }
             }
         }
      
