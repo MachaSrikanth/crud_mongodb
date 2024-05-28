@@ -20,7 +20,7 @@ pipeline {
     }
     stage('Node JS Run') {
       steps {
-        sh 'node index.js'
+        sh 'node src/index.js'
       }
     }
   }
