@@ -9,7 +9,6 @@ pipeline {
                 script {
                    git branch: 'main', url: 'https://github.com/MachaSrikanth/crud_mongodb.git' 
 
-                  sh 'npm install'
                 }
             }
         }
@@ -17,6 +16,11 @@ pipeline {
     stage('Node JS Build') {
       steps {
         sh 'npm install'
+      }
+    }
+    stage('Node JS Run') {
+      steps {
+        sh 'npm start'
       }
     }
   }
