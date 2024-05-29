@@ -18,10 +18,6 @@ pipeline {
         sh 'npm install'
       }
     }
-    stage('Node JS Run') {
-      steps {
-        sh 'node src/index.js'
-      }
-    }
+   
   }
 }
