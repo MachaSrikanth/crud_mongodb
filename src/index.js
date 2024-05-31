@@ -3,7 +3,7 @@ const app = express();
 
 app.get('/healthcheck',(req,res)=>{
 
-    res.send("connected successfully on server 3001.")
+    res.send("connected successfully on server.")
     //test
 })
 
