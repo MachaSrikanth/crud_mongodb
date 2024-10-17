@@ -4,7 +4,7 @@ const app = express();
 app.get('/healthcheck',(req,res)=>{
 
     res.send("connected successfully on server....")
-    //test
+    //testing
 })
 
 app.listen(3001,()=>{
